@@ -1,14 +1,13 @@
 # Heron Inference
 
-Among the most typical inference methods for probabilistic models, variational inference tends to approach but not reach the predictive power of sampling approaches. On the other hand, Gibbs sampling methods are inherently sequential and hard to adapt to the required computational efficiency of modern big data era. 
+Among the most typical inference methods for probabilistic models, variational inference tends to approach but not reach the predictive power of sampling approaches. On the other hand, Gibbs sampling methods are inherently sequential and hard to adapt to the required computational efficiency of the big data era. 
 
-Heron presents a new inferential approach derived from the Gibbs-based methods which is able to improve both the predictive power and computational efficiency of the typical inferential methods.
+Heron presents a new inferential approach derived from the Gibbs-based methods which is able to improve both the predictive power and computational efficiency of the typical inferential methods. The code implements the paper [Heron Inference for Bayesian Graphical Models](https://arxiv.org/abs/1802.06526)
 
 
 ### Benefits:
 * **Convergence Assesment**
-Heron method maximizes the state augmentation of a topic model and finds a deterministic approach to Gibbs sampling. The difficulty in the assesment of sampling methods stems from having to estimating parameters based on samples. With the deterministic approach, the assessment of convergence is done directly from parameters. An example below shows the behavior of the perplexity between collapsed Gibbs sampler (CGS) and Heron Inference method.
-
+Heron method maximizes the state augmentation of a topic model and finds a deterministic approach to Gibbs sampling. The difficulty in the assesment of sampling methods stems from having to estimating parameters based on samples. With the deterministic approach, the assessment of convergence is done directly from the parameters of the model. 
 
 * **Predictive Power**
 The augmentation of the latent state is known to increase the predictive power of probabilistic models, by taking this augmentation to infinity, Heron improves the learning of the probabilistic models.
